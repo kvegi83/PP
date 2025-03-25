@@ -1,1 +1,56 @@
-added text to 1st file
+git is a distributed version control system
+distributed means every one have copy of complete codes and history and changes
+
+git --version
+git config --list --show-origin
+git config --global user.name 'praveen'
+git config --global user.email 'p@gmail.com'
+Repository ---- (it is like folder which have all files and history its like folder is being tracked by git 
+git init ---- (it will create empty repository in the local with master branch u can rename the branch if u need with main or some thing
+git config --global init.defaultBranch main     
+git status ----(shows changes)
+git add filename ----(adds files)
+git add . adds all files 
+git commit -m "message" ----(its like snap shot we can go to snapshots if we want )
+git log
+git rm --cached test1.txt  ----( it removes th iles which we want to remove from add)
+git branch -M main
+git remote add origin https://github.com/kvegi83/PP.git
+git push -u origin main 
+git branch branchname ->creates branch 
+git checkout branchname 
+git checkout main 
+git checkout -b newbranchname 
+git push --set-upstream origin feature-branch 
+git push -u origin feature-branch
+git pull
+
+
+
+
+when we clone remote repository in local it by default save that branch as origin 
+
+
+
+
+create repository
+create a new branch from the main branch or other which you want to make changes 
+make your changes 
+push the branch to the remote repo 
+open a pull request 
+merge the changes 
+pull the merged changes into your local main branch 
+repeat from step 2
+
+
+issues 
+merge conflict 
+
+
+reset -- deleets commits history 
+git reset --soft  commitid
+git reset commitid
+git reset --hard commitid 
+
+
+git revert -- keeps commits history
